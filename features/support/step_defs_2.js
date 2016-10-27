@@ -7,7 +7,7 @@ function Steps(){
     var res = browser.execute(function() {
         var color = document.defaultView.getComputedStyle(document.querySelector('.Card-container')).borderColor;
         return color;
-    })
+    });
     chai.expect(res.value).to.equal(color);
   });
 

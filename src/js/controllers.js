@@ -1,6 +1,6 @@
 
 angular.module('MainApp').controller('MainController', ['$scope', '$rootScope', '$attrs', function($scope, $rootScope, $attrs){
-    let vm = this;
+    var vm = this;
     vm.items = [
         /*
         {
@@ -31,14 +31,14 @@ angular.module('MainApp').controller('MainController', ['$scope', '$rootScope', 
 }]);
 
 angular.module('MainApp').controller('CardController', ['$scope', '$element', function($scope, $element){
-    let vm = this;
+    var vm = this;
     vm.name = $scope.name;
     vm.description = $scope.description;
     vm.image = $scope.image;
 }]);
 
 angular.module('MainApp').controller('NewItemController', ['$scope', '$rootScope', function($scope, $rootScope){
-    let vm = this;
+    var vm = this;
     vm.addItem = function(){
         $rootScope.$emit('addNewItem', {name:vm.name, description:vm.description});
         vm.name = "";
