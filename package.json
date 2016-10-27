@@ -1,0 +1,19 @@
+{
+  "name": "exCI",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "browser-sync start -s src -f src",
+    "build:scss": "node-sass --include-path scss scss/main.scss   public/css/main.css"
+  },
+  "dependencies": {
+    "browser-sync": "^2.17.5",
+    "chai": "^3.5.0",
+    "mocha": "^3.1.2"
+  },
+  "devDependencies": {
+    "chimp": "^0.41.2",
+    "node-sass": "^3.10.1"
+  }
+}

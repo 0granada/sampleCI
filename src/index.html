@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width,initial-scale=1" name=viewport>
+    <title>Sample</title>
+    <link rel="stylesheet" href="css/vendor/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body ng-app="MainApp" ng-controller="MainController as vm">
+    
+    <h2 class="text-center">
+        Users
+    </h2>
+
+    <new-item></new-item>
+    <div class="Cards row">
+        <card ng-repeat="item in vm.items" name="item.name" description="item.description" image="item.image" ></card>
+    </div>
+
+    <script src="/js/vendor/angular.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/controllers.js"></script>
+    <script src="/js/directives.js"></script>
+</body>
+</html>
