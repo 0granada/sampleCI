@@ -13,6 +13,6 @@ sleep 5 && ./node_modules/.bin/chimp --browser=phantomjs
 # Call kill method
 killBS
 
-# Change return status code
+# Change return status code.
 exit $?
 
