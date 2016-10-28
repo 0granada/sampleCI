@@ -1,6 +1,7 @@
 #!/bin/bash
 
-# This file run tests using bash.
+# This file run tests using bash,
+# Try to kill the bs instance
 
 # function to kill browser sync instances.
 function killBS {
