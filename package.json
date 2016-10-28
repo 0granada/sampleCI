@@ -15,6 +15,7 @@
   },
   "devDependencies": {
     "chimp": "^0.41.2",
+    "cucumber-html-reporter": "^0.2.16",
     "node-sass": "^3.10.1"
   }
 }
