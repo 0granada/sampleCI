@@ -13,9 +13,10 @@ killBS
 npm run start > /tmp/out.log 2> /tmp/err.log &
 # run chimp
 sleep 5 && ./node_modules/.bin/chimp --browser=phantomjs --jsonOutput=project_output.json
+status=$?
 # Call kill method
 killBS
 
 # Change return status code.
-exit $?
+exit $status
 
