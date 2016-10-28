@@ -30,7 +30,7 @@ function Steps(){
   this.Then(/^I see a new card with the name "([^"]*)" and description "([^"]*)"\.$/, function (name, description) {
     // browser.saveScreenshot('./p4.png');
     browser.waitForExist('.Card-container');
-    chai.expect(browser.getText('.Card-container h3')).to.equal(name);
+    chai.expect(browser.getText('.Card-container h3')).to.equal(name+".");
     chai.expect(browser.getText('.Card-container p')).to.equal(description);
   });
 
