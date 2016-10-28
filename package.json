@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "start": "browser-sync start -s src -f src",
-    "build:scss": "node-sass --include-path scss scss/main.scss   public/css/main.css"
+    "build:scss": "node-sass --watch --recursive --output src/css src"
   },
   "dependencies": {
     "browser-sync": "^2.17.5",
