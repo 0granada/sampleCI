@@ -9,6 +9,7 @@ function killBS {
 killBS
 npm run start > /tmp/out.log 2> /tmp/err.log &
 sleep 5 && ./node_modules/.bin/chimp --browser=phantomjs
+# Call kill method
 killBS
 
 exit $?
