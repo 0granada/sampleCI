@@ -2,7 +2,7 @@
 # Sample CI Project
 
 ## Goals
-- Learn and understand current features implemented.
+- Read and understand current features implemented.
 - Refactor the code if is possible.
 - Implement the next feature:
 ```gherkin
